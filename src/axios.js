@@ -2,7 +2,7 @@ import axios from "axios";
 
 const URL =
   document.domain === "localhost"
-    ? "http://localhost:5555"
+    ? "http://localhost:4444"
     : process.env.REACT_APP_API_URL;
 
 const instance = axios.create({
