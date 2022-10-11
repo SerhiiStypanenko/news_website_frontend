@@ -1,9 +1,6 @@
 import axios from "axios";
 
-const URL =
-  document.domain === "localhost"
-    ? "http://localhost:4444"
-    : process.env.REACT_APP_API_URL;
+const URL = process.env.REACT_APP_API_URL || "https://websitee-practice.herokuapp.com";
 
 const instance = axios.create({
   baseURL: URL,
