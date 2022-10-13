@@ -44,9 +44,6 @@ export const Header = () => {
                 <Link to="/login">
                   <Button variant="outlined">Увійти</Button>
                 </Link>
-                <Link to="/register">
-                  <Button variant="contained">Створити аккаунт</Button>
-                </Link>
               </>
             )}
           </div>
