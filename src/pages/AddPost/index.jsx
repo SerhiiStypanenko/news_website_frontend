@@ -144,7 +144,7 @@ export const AddPost = () => {
         onChange={(e) => setFieldValue("title", e.target.value)}
         classes={{ root: styles.title }}
         variant="standard"
-        placeholder="Заголовок статті..."
+        placeholder="Заголовок новини..."
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         fullWidth
