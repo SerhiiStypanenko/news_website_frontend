@@ -45,27 +45,6 @@ export const FullPost = () => {
       >
         <ReactMarkdown children={data.text} />
       </Post>
-      <CommentsBlock
-        items={[
-          {
-            user: {
-              fullName: "Сергій Сергієнко",
-              avatarUrl: "https://mui.com/static/images/avatar/1.jpg",
-            },
-            text: "Це тестовий коментар",
-          },
-          {
-            user: {
-              fullName: "Іван Іванов",
-              avatarUrl: "https://mui.com/static/images/avatar/2.jpg",
-            },
-            text: "Це тестовий коментар",
-          },
-        ]}
-        isLoading={false}
-      >
-        <Index />
-      </CommentsBlock>
     </>
   );
 };
