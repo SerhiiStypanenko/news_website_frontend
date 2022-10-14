@@ -33,8 +33,8 @@ export const Home = () => {
         <Tab label="Нові" />
         <Tab label="Популярні" />
       </Tabs>
-      <Grid container spacing={2}>
-        <Grid xs={4} item>
+      <Grid container spacing={1}>
+        <Grid xs={8} item>
           {(isPostsLoading ? [...Array(5)] : posts.items).map((obj, index) =>
             isPostsLoading ? (
               <Post key={index} isLoading={true} />
