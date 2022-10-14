@@ -34,7 +34,7 @@ export const AddPost = () => {
       setImageUrl(data.url);
     } catch (err) {
       console.warn(err);
-      alert("Ошибка при загрузке файла!");
+      alert("File upload error!");
     }
   };
 
@@ -66,7 +66,7 @@ export const AddPost = () => {
       navigate(`/posts/${_id}`);
     } catch (err) {
       console.warn(err);
-      alert("Ошибка при создании статьи!");
+      alert("Error creating post!");
     }
   };
 
@@ -82,7 +82,7 @@ export const AddPost = () => {
         })
         .catch((err) => {
           console.warn(err);
-          alert("Ошибка при получении статьи!");
+          alert("Error getting post!");
         });
     }
   }, []);
