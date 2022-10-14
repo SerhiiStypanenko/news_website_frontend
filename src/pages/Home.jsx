@@ -56,25 +56,6 @@ export const Home = () => {
         </Grid>
         <Grid xs={4} item>
           <TagsBlock items={tags.items} isLoading={isTagsLoading} />
-          <CommentsBlock
-            items={[
-              {
-                user: {
-                  fullName: "User 1",
-                  avatarUrl: "",
-                },
-                text: "Це тестовий коментар",
-              },
-              {
-                user: {
-                  fullName: "User 2",
-                  avatarUrl: "",
-                },
-                text: "Це тестовий коментар",
-              },
-            ]}
-            isLoading={false}
-          />
         </Grid>
       </Grid>
     </>
